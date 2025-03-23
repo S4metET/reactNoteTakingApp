@@ -6,11 +6,12 @@ export default function Navbar({ setCurrentPage }) {  // Burayı doğru hale get
     <div className="navbar">
       <button onClick={() => setCurrentPage("home")} >
         <FontAwesomeIcon icon={faHouseChimney} />
+        <span>Home</span>
       </button>
-      <button><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
-      <button><FontAwesomeIcon icon={faDownload} /></button>
-      <button><FontAwesomeIcon icon={faTag} /></button>
-      <button><FontAwesomeIcon icon={faGear} /></button>
+      <button><FontAwesomeIcon icon={faMagnifyingGlass} /><span>Search</span></button>
+      <button><FontAwesomeIcon icon={faDownload} /><span>Download</span></button>
+      <button><FontAwesomeIcon icon={faTag} /><span>Tags</span></button>
+      <button><FontAwesomeIcon icon={faGear} /><span>Settings</span></button>
     </div>
   );
 }
