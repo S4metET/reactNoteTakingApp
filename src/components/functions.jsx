@@ -3,12 +3,12 @@ import { faChevronLeft, faTrashCan, faDownload } from "@fortawesome/free-solid-s
 
 export default function functions() {
   return (
-    <div>
-      <div>
+    <div className="functions">
+      <div className="back">
         <FontAwesomeIcon icon={faChevronLeft} />
         <p>Go Back</p>
       </div>
-      <div>
+      <div className="actions">
         <FontAwesomeIcon icon={faTrashCan} />
         <FontAwesomeIcon icon={faDownload} />
         <button>Cancel</button>
